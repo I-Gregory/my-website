@@ -77,13 +77,13 @@ a:active {
     text-decoration: underline;
 }
 
-.top3 {
-    list-style-type: "\1F44D";
-}
-
 #media_types {
     font-weight: bold;
     font-size: 1.4em;
+}
+
+.top3 {
+    list-style-type: "\1F44D";
 }
 
 .li_books {
