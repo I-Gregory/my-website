@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ultra';
+    src: url('../fonts/Ultra-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Faculty Glyphic Regular';
+    src: url('../fonts/FacultyGlyphic-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quantico';
+    src: url('../fonts/Quantico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('../fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nova Square';
+    src: url('../fonts/NovaSquare-Regular.ttf') format('truetype');
+}
+
+html { background-image: linear-gradient(to bottom, rgb(0, 0, 90) 0%, rgb(195, 210, 210) 12%, rgb(0, 0, 90) 25%, rgb(195, 210, 210) 36%, rgb(0, 0, 90) 50%, rgb(195, 210, 210) 62%, rgb(0, 0, 90) 75%, rgb(195, 210, 210) 86%, rgb(0, 0, 90) 100%); }
+
+header h1 { text-align: center; }
+header p {
+    font-size: smaller;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(195, 210, 210);
+    color: rgb(0, 0, 139);
+    margin: 1em 2.5em 1em;
+    padding: 0.1em 2em 0.5em;
+    border: 5px solid rgb(100, 105, 104);
+    border-radius: 30px;
+}
+
+body p {
+    font-size: 1.4em;
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+}
+
+main li>img {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
+    float: left;
+}
+
+main li>p { padding: 0.5em 1em 0.5em; }
+
+a[class] { padding: 0 1.5em 0; }
+
+h1, h2 {
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.8em;
+    clear: left;
+}
+
+footer { 
+    font-size: 0.5em;
+    text-align: center;
+}
+
+a:link {
+    color: rgb(134, 47, 168);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(214, 5, 211);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(23, 151, 0);
+    text-decoration: underline
+}
+a:active {
+    color: rgb(213, 216, 0);
+    text-decoration: underline;
+}
+
+#media_types {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#formats {
+    text-align: center;
+}
+
+.top3 { list-style-type: "\1F44D"; }
+
+.li_books { font-family: 'Lora', 'Open Sans', sans-serif; }
+
+.li_movies { font-family: 'Ultra', Impact, sans-serif;}
+
+.li_tvshows { font-family: 'Faculty Glyphic Regular', Helvetica, sans-serif;}
+
+.li_videogames { font-family: 'Orbitron', 'Press Start 2P', sans-serif; }
+
+.li_audiobooks { font-family: Garamond, Times, sans-serif;}
