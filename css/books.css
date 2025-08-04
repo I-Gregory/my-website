@@ -45,13 +45,14 @@ body {
     background-color: rgb(195, 210, 210);
     color: rgb(0, 0, 139);
     margin: 1em 2.5em 1em;
-    padding: 0.1em 2em 0.5em;
+    padding: 0.1em 5em 0.5em;
     border: 5px solid rgb(100, 105, 104);
     border-radius: 30px;
 }
 body p {
     font-size: 1.2em;
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+    text-align: center;
 }
 
 header { text-align: center; }
@@ -71,33 +72,19 @@ h2 {
 footer { 
     font-size: 0.5em;
     text-align: center;
-    clear: both;
 }
 
-#tune_in {
-    clear: both;
-    text-align: center;
-}
+#current { text-decoration: none; }
 
-#interacted_works {
-    width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
-    float: left;
-    text-align: center;
-    padding: 0.5em;
-    border: 4px solid rgb(100, 105, 104);
-}
-
-#to_be_explored {
-    width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
-    float: right;
-    text-align: center;
-    padding: 0.5em;
-    border: 4px solid rgb(100, 105, 104);
-}
-
-#media_types {
+#full_list {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1em;
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+}
+#homepage {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
 }
 
 #nav_links {
@@ -113,15 +100,9 @@ footer {
 }
 #nav_links li a.current { text-decoration: none; }
 
-#homepage {
-    font-weight: bold;
-    font-size: 1em;
-    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
-}
-#full_list {
-    font-weight: bold;
-    font-size: 1em;
-    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+#tune_in {
+    clear: both;
+    text-align: center;
 }
 
 .li_books {
@@ -178,7 +159,4 @@ a:active {
         font-size: clamp(0.7rem, 3vw, 2.5rem);
     }
 
-    #interacted_works, #to_be_explored {
-        padding: 0.5em;
-    }
 } /* This media query is to ensure that the text remains readable on smaller screens*/

@@ -55,28 +55,33 @@ body {
     border: 5px solid rgb(100, 105, 104);
     border-radius: 30px;
 }
-
 body p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
-}
+    text-align: center;
+} /*Formatting of the body of the webpage*/
 
 main li>img {
     margin: 0.5em 0.5em 0.5em 0;
     padding: 0.5em 1em 0.5em 0;
     float: left;
+    width: 19.93633%;
 }
 
 main li>p { padding: 0.5em 1em 0.5em; }
+main li>p.return { font-size: 1em; }
 
-a[class] { padding: 0 1.5em 0; }
 
-h1, h2 {
+h1 {
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
 }
-
+h2 {
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
 h3 {
     font-size: 1.8em;
     clear: left;
@@ -87,13 +92,61 @@ footer {
     text-align: center;
 }
 
+#media_types {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#formats {
+    list-style-type: none;
+    padding: 0.5em 1em 0.5em;
+    text-align: center;
+    border-top: 2px solid rgb(100, 105, 104);
+    border-bottom: 2px solid rgb(100, 105, 104);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#formats li {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+#nav_links {
+    list-style-type: none;
+    padding: 0.5em;
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 139);
+    border-bottom: 2px solid rgb(0, 0, 139);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+}
+#nav_links li {
+    display: inline-block;
+    padding: 0.5em 1em 0.5em;
+}
+#nav_links li a.current { text-decoration: none; }
+
+#tune_in {
+    clear: both;
+    text-align: center;
+}
+
+.top3 { list-style-type: "\1F44D"; }
+
+.li_books { font-family: 'Lora', 'Open Sans', sans-serif; }
+.li_movies { font-family: 'Ultra', Impact, sans-serif; }
+.li_tvshows { font-family: 'Faculty Glyphic Regular', Helvetica, sans-serif; }
+.li_videogames { font-family: 'Orbitron', 'Press Start 2P', sans-serif; }
+.li_audiobooks { font-family: Garamond, Times, sans-serif; }
+
 a:link {
     color: rgb(134, 47, 168);
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:visited {
     color: rgb(214, 5, 211);
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover {
     color: rgb(23, 151, 0);
@@ -104,23 +157,21 @@ a:active {
     text-decoration: underline;
 }
 
-#media_types {
-    font-weight: bold;
-    font-size: 1.4em;
-}
+@media only screen and (max-width: 715px) {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+        font-size: clamp(0.1rem, 2vw, 2.5rem);
+    }
+    h1 {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+    h2 {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
 
-#formats {
-    text-align: center;
-}
-
-.top3 { list-style-type: "\1F44D"; }
-
-.li_books { font-family: 'Lora', 'Open Sans', sans-serif; }
-
-.li_movies { font-family: 'Ultra', Impact, sans-serif;}
-
-.li_tvshows { font-family: 'Faculty Glyphic Regular', Helvetica, sans-serif;}
-
-.li_videogames { font-family: 'Orbitron', 'Press Start 2P', sans-serif; }
-
-.li_audiobooks { font-family: Garamond, Times, sans-serif;}
+    main li>img {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
+    float: left;
+    min-width: 80px;
+    }
+} /* Media query to adjust image size on smaller screens ensure that the text remains readable*/
