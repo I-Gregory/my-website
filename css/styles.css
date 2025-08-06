@@ -1,3 +1,4 @@
+/* Font information to include various uncommon fonts used in the website */
 @font-face {
     font-family: 'Orbitron';
     src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
@@ -38,15 +39,15 @@
     font-family: 'Nova Square';
     src: url('../fonts/NovaSquare-Regular.ttf') format('truetype');
 }
-
-html { background-image: linear-gradient(to bottom, rgb(0, 0, 90) 0%, rgb(195, 210, 210) 12%, rgb(0, 0, 90) 25%, rgb(195, 210, 210) 36%, rgb(0, 0, 90) 50%, rgb(195, 210, 210) 62%, rgb(0, 0, 90) 75%, rgb(195, 210, 210) 86%, rgb(0, 0, 90) 100%); }
-
-header h1 { text-align: center; }
-header p {
-    font-size: smaller;
-    text-align: center;
+@font-face {
+    font-family: 'Quintessential';
+    src: url('../fonts/Quintessential-Regular.ttf') format('truetype');
 }
 
+/* General Styles for the Website */
+html { background-image: linear-gradient(to bottom, rgb(0, 0, 90) 0%, rgb(195, 210, 210) 12%, rgb(0, 0, 90) 25%, rgb(195, 210, 210) 36%, rgb(0, 0, 90) 50%, rgb(195, 210, 210) 62%, rgb(0, 0, 90) 75%, rgb(195, 210, 210) 86%, rgb(0, 0, 90) 100%); }
+
+/*Formatting of the body of the webpage*/
 body {
     background-color: rgb(195, 210, 210);
     color: rgb(0, 0, 139);
@@ -59,8 +60,22 @@ body p {
     font-size: 1.2em;
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
     text-align: center;
-} /*Formatting of the body of the webpage*/
+}
 
+/* Header and Title Formatting */
+header h1 { text-align: center; }
+header p {
+    font-size: smaller;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+/* Main Content Formatting */
 main li>img {
     margin: 0.5em 0.5em 0.5em 0;
     padding: 0.5em 1em 0.5em 0;
@@ -71,18 +86,22 @@ main li>img {
 main li>p { padding: 0.5em 1em 0.5em; }
 main li>p.return { font-size: 1em; }
 
-
-h1 {
-    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-}
 h2 {
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
     font-weight: bold;
     font-size: 1.8em;
 }
+
+li.sci-fi>h3 {
+    font-family: 'Audiowide', sans-serif;
+}
+li.fantasy>h3 {
+    font-family: 'Quintessential', sans-serif;
+}
+
 h3 {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
     font-size: 1.8em;
     clear: left;
 }
@@ -90,25 +109,19 @@ h3 {
 footer { 
     font-size: 0.5em;
     text-align: center;
+    clear: both;
+}
+
+/* Beginning of id styles */
+#book_list, #movie_list, #tv_show_list, #video_game_list, #audiobook_list { /* ul element styles for each media type and their respective webpages */
+    list-style-type: none;
+    padding: 0.5em;
+    text-align: center;
 }
 
 #media_types {
     font-weight: bold;
     font-size: 1.4em;
-}
-
-#formats {
-    list-style-type: none;
-    padding: 0.5em 1em 0.5em;
-    text-align: center;
-    border-top: 2px solid rgb(100, 105, 104);
-    border-bottom: 2px solid rgb(100, 105, 104);
-    font-weight: bold;
-    font-size: 1.2em;
-}
-#formats li {
-    display: inline-block;
-    padding: 0.5em;
 }
 
 #nav_links {
@@ -132,7 +145,12 @@ footer {
     text-align: center;
 }
 
+/* Beginning of class styles */
+
+/* Class styles for each ul list item type */
 .top3 { list-style-type: "\1F44D"; }
+.sci-fi { list-style-type: "\1F680"; }
+.fantasy { list-style-type: "\1FA84"; }
 
 .li_books { font-family: 'Lora', 'Open Sans', sans-serif; }
 .li_movies { font-family: 'Ultra', Impact, sans-serif; }
@@ -140,6 +158,7 @@ footer {
 .li_videogames { font-family: 'Orbitron', 'Press Start 2P', sans-serif; }
 .li_audiobooks { font-family: Garamond, Times, sans-serif; }
 
+/* Pseudoclass styles */
 a:link {
     color: rgb(134, 47, 168);
     text-decoration: underline;
@@ -157,8 +176,11 @@ a:active {
     text-decoration: underline;
 }
 
+/* Media query to adjust text and image sizes on smaller screens to ensure readability */
+
+/* 566 pixels to 715 pixels */
 @media only screen and (max-width: 715px) {
-    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .top3, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
         font-size: clamp(0.1rem, 2vw, 2.5rem);
     }
     h1 {
@@ -174,4 +196,21 @@ a:active {
     float: left;
     min-width: 80px;
     }
-} /* Media query to adjust image size on smaller screens ensure that the text remains readable*/
+}
+
+/* 565 pixels or less */
+@media only screen and (max-width: 565px) {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+        font-size: clamp(0.1rem, 2vw, 2.5rem);
+    }
+    h1 {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+    h2 {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
+
+    #interacted_works, #to_be_explored {
+        padding: 0.5em;
+    }
+}
