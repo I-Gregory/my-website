@@ -1,0 +1,83 @@
+/* Media query to adjust text and image sizes on smaller screens to ensure readability */
+
+/* 716 pixels to 733 pixels */
+@media only screen and (max-width: 733px) {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .top3, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+        font-size: clamp(0.1rem, 2vw, 2.5rem);
+    }
+    h1 {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+    h2 {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
+
+    main li>img {
+        margin: 0.5em 0.5em 0.5em 0;
+        padding: 0.5em 1em 0.5em 0;
+        float: left;
+        min-width: 17.87302%;
+    }
+}
+
+/* 566 pixels to 715 pixels */
+@media only screen and (max-width: 715px) {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .top3, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+        font-size: clamp(0.1rem, 2vw, 2.5rem);
+    }
+    h1 {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+    h2 {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
+
+    main li>img {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
+    float: left;
+    min-width: 17.87302%;
+    }
+}
+
+/* 566 pixels to 668 pixels */
+@media only screen and (max-width: 668px) {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .top3, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+        font-size: clamp(0.1rem, 2vw, 2.5rem);
+    }
+    h1 {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+
+    #media_bar {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
+
+    h2 {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
+
+    main li>img {
+        margin: 0.5em 0.5em 0.5em 0;
+        padding: 0.5em 1em 0.5em 0;
+        float: left;
+        min-width: 17.87302%;
+    }
+}
+
+/* 565 pixels or less */
+@media only screen and (max-width: 565px) {
+    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
+        font-size: clamp(0.1rem, 2vw, 2.5rem);
+    }
+    h1 {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+    h2 {
+        font-size: clamp(0.7rem, 3vw, 2.5rem);
+    }
+
+    #interacted_works, #to_be_explored {
+        padding: 0.5em;
+    }
+}

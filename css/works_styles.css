@@ -14,3 +14,22 @@
     padding: 0.5em;
     border: 4px solid rgb(100, 105, 104);
 }
+
+/* Grid formatting for media type webpages */
+main ul#book_list, main ul#movie_list, main ul#tv_list, main ul#games_list, main ul#audio_list {
+    display: grid;
+    grid-template: 20.925em 20.925em 20.925em / 50% 50%; /*  */
+    grid-gap: 2em 2em;
+}
+main ul#book_list p, main ul#movie_list p, main ul#tv_show_list p, main ul#video_game_list p, main ul#audiobook_list p {
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+/*
+::marker {
+    font-size: 2.75em;
+    margin-left: 0.5em;
+    list-style-position: inside;
+}
+*/

@@ -55,6 +55,7 @@ body {
     padding: 0.1em 2em 0.5em;
     border: 5px solid rgb(100, 105, 104);
     border-radius: 30px;
+    max-width: 1600px;
 }
 body p {
     font-size: 1.2em;
@@ -90,6 +91,7 @@ h2 {
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
     font-weight: bold;
     font-size: 1.8em;
+    text-align: center;
 }
 
 li.sci-fi>h3 {
@@ -119,44 +121,66 @@ footer {
     text-align: center;
 }
 
+#current { text-decoration: none; }
+
 #media_types {
     font-weight: bold;
     font-size: 1.4em;
 }
-
-#nav_links {
-    list-style-type: none;
-    padding: 0.5em;
-    text-align: center;
-    border-top: 2px solid rgb(0, 0, 139);
-    border-bottom: 2px solid rgb(0, 0, 139);
-    font-weight: bold;
-    font-size: 1em;
-    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
-}
-#nav_links li {
-    display: inline-block;
-    padding: 0.5em 1em 0.5em;
-}
-#nav_links li a.current { text-decoration: none; }
 
 #tune_in {
     clear: both;
     text-align: center;
 }
 
-/* Beginning of class styles */
-
-/* Class styles for each ul list item type */
-.top3 { list-style-type: "\1F44D"; }
-.sci-fi { list-style-type: "\1F680"; }
+/* Beginning of class styles *************
+******************************************
+Class styles for each ul list item type */
 .fantasy { list-style-type: "\1FA84"; }
+.sci-fi { list-style-type: "\1F680"; }
+.top3 { list-style-type: "\1F44D"; }
 
 .li_books { font-family: 'Lora', 'Open Sans', sans-serif; }
 .li_movies { font-family: 'Ultra', Impact, sans-serif; }
 .li_tvshows { font-family: 'Faculty Glyphic Regular', Helvetica, sans-serif; }
 .li_videogames { font-family: 'Orbitron', 'Press Start 2P', sans-serif; }
 .li_audiobooks { font-family: Garamond, Times, sans-serif; }
+
+/* Media navigation bar styles */
+.media_bar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.2em 0.5em 0.5em;
+    margin-top: 0;
+    border-bottom: 2px solid rgb(0, 0, 139);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+}
+.media_bar li {
+    text-align: center;
+    padding: 0.5em 1em 0.5em;
+}
+.media_bar li a.current { text-decoration: none; }
+
+/* Navigation bar styles */
+.nav_bar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.5em 0.5em 0.2em;
+    margin-bottom: 0.1em;
+    border-top: 2px solid rgb(0, 0, 139);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
+}
+.nav_bar li {
+    text-align: center;
+    padding: 0.5em 1em 0.5em;
+}
+.nav_bar li a.current { text-decoration: none; }
 
 /* Pseudoclass styles */
 a:link {
@@ -174,43 +198,4 @@ a:hover {
 a:active {
     color: rgb(213, 216, 0);
     text-decoration: underline;
-}
-
-/* Media query to adjust text and image sizes on smaller screens to ensure readability */
-
-/* 566 pixels to 715 pixels */
-@media only screen and (max-width: 715px) {
-    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .top3, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
-        font-size: clamp(0.1rem, 2vw, 2.5rem);
-    }
-    h1 {
-        font-size: clamp(1rem, 3vw, 2.5rem);
-    }
-    h2 {
-        font-size: clamp(0.7rem, 3vw, 2.5rem);
-    }
-
-    main li>img {
-    margin: 0.5em 0.5em 0.5em 0;
-    padding: 0.5em 1em 0.5em 0;
-    float: left;
-    min-width: 80px;
-    }
-}
-
-/* 565 pixels or less */
-@media only screen and (max-width: 565px) {
-    body p, main li>p.return, #media_types, #homepage, #full_list, #wiki, .li_books, .li_movies, .li_tvshows, .li_videogames, .li_audiobooks {
-        font-size: clamp(0.1rem, 2vw, 2.5rem);
-    }
-    h1 {
-        font-size: clamp(1rem, 3vw, 2.5rem);
-    }
-    h2 {
-        font-size: clamp(0.7rem, 3vw, 2.5rem);
-    }
-
-    #interacted_works, #to_be_explored {
-        padding: 0.5em;
-    }
 }
