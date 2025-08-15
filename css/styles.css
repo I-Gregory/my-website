@@ -81,7 +81,7 @@ main li>img {
     margin: 0.5em 0.5em 0.5em 0;
     padding: 0.5em 1em 0.5em 0;
     float: left;
-    clear: left;
+    clear: both;
     width: 19.93633%;
 }
 main ul#book_list li>img, main ul#movie_list li>img, main ul#tv_list li>img, main ul#games_list li>img, main ul#audio_list li>img {
@@ -94,6 +94,14 @@ main ul#book_list li>img, main ul#movie_list li>img, main ul#tv_list li>img, mai
 main li>p { padding: 0.5em 1em 0.5em; }
 main li>p.return { font-size: 1em; }
 main ul li>div { font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif; }
+
+main audio {
+    width: 40%;
+    height: auto;
+    max-width: 400px; /* Optional: set a max width */
+    display: block;
+    margin: 0 auto;   /* Optional: center the player */
+}
 
 h2 {
     font-family: 'Nova Square', 'Quantico', 'Audiowide', sans-serif;
@@ -113,6 +121,7 @@ h3 {
     margin: 0.5em 0.5em 0.5em 0;
     padding: 0.5em 1em 0.5em 0;
     font-size: 1.8em;
+    clear: both;
 }
 
 footer { 
@@ -128,6 +137,12 @@ footer {
     text-align: center;
 }
 
+#chip, #wand {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
 #current { text-decoration: none; }
 
 #media_types {
@@ -138,6 +153,11 @@ footer {
 #tune_in {
     clear: both;
     text-align: center;
+}
+
+#wikipedia {
+    width: 1em;
+    height: 1em;
 }
 
 /* Beginning of class styles *************
@@ -204,5 +224,22 @@ a:hover {
 }
 a:active {
     color: rgb(213, 216, 0);
+    text-decoration: underline;
+}
+
+a#wiki:link {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+a#wiki:visited {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+}
+a#wiki:hover {
+    color: rgb(179, 210, 5);
+    text-decoration: underline;
+}
+a#wiki:active {
+    color: rgb(112, 131, 3);
     text-decoration: underline;
 }
