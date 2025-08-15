@@ -130,7 +130,7 @@ footer {
     clear: both;
 }
 
-/* Beginning of id styles */
+/* Beginning of id styles - alphabatized */
 #book_list, #movie_list, #tv_list, #games_list, #audio_list { /* ul element styles for each media type and their respective webpages */
     list-style-type: none;
     padding: 0.5em;
@@ -141,6 +141,11 @@ footer {
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
+}
+
+#citation { 
+    font-size: 1em;
+    text-align: center;
 }
 
 #current { text-decoration: none; }
