@@ -1,48 +1,67 @@
 /* Styles for both sections of the works page */
 #interacted_works {
-    width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
-    float: left;
-    text-align: center;
-    padding: 0.5em;
-    border: 4px solid rgb(100, 105, 104);
+  width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
+  float: left;
+  text-align: center;
+  padding: 0.5em;
+  border: 4px solid rgb(100, 105, 104);
 }
 
 #to_be_explored {
-    width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
-    float: right;
-    text-align: center;
-    padding: 0.5em;
-    border: 4px solid rgb(100, 105, 104);
+  width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
+  float: right;
+  text-align: center;
+  padding: 0.5em;
+  border: 4px solid rgb(100, 105, 104);
 }
 
 /* Grid formatting for media type webpages */
-main ul#book_list, main ul#movie_list, main ul#tv_list, main ul#games_list, main ul#audio_list {
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 50% 50%;
-    grid-gap: 2em 2em;
+main ul#book_list,
+main ul#movie_list,
+main ul#tv_list,
+main ul#games_list,
+main ul#audio_list {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 50% 50%;
+  grid-gap: 2em 2em;
 }
-main ul#book_list li, main ul#movie_list li, main ul#tv_list li,
-main ul#games_list li, main ul#audio_list li {
-    padding-left: 0;
-    list-style-position: inside;
+main ul#book_list li,
+main ul#movie_list li,
+main ul#tv_list li,
+main ul#games_list li,
+main ul#audio_list li {
+  padding-left: 0;
+  list-style-position: inside;
 }
-main ul#book_list h3, main ul#movie_list h3, main ul#tv_show_list h3, main ul#video_game_list h3, main ul#audiobook_list h3 {
-    display: inline-block;
-    padding: 0.2em 0.2em 0.2em 0em;
-    margin: 0em 0em 0.2em 0.2em;
+main ul#book_list h3,
+main ul#movie_list h3,
+main ul#tv_show_list h3,
+main ul#video_game_list h3,
+main ul#audiobook_list h3 {
+  display: inline-block;
+  padding: 0.2em 0.2em 0.2em 0em;
+  margin: 0em 0em 0.2em 0.2em;
 }
-main ul#book_list p, main ul#movie_list p, main ul#tv_show_list p, main ul#video_game_list p, main ul#audiobook_list p {
-    font-size: 1em;
-    padding: 0.5em;
-    margin: 0em 0em 0.5em;
+main ul#book_list p,
+main ul#movie_list p,
+main ul#tv_show_list p,
+main ul#video_game_list p,
+main ul#audiobook_list p {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0em 0em 0.5em;
 }
-main ul#book_list div, main ul#movie_list div, main ul#tv_show_list div, main ul#video_game_list div, main ul#audiobook_list div {
-    font-size: 0.8em;
-    padding: 0.5em;
-    text-align: center;
+main ul#book_list div,
+main ul#movie_list div,
+main ul#tv_show_list div,
+main ul#video_game_list div,
+main ul#audiobook_list div {
+  font-size: 0.8em;
+  padding: 0.5em;
+  text-align: center;
 }
 
 li::marker {
-    font-size: 2.25em;
-    margin-right: 0em;
+  font-size: 2.25em;
+  margin-right: 0em;
 }

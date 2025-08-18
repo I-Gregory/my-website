@@ -1,122 +1,153 @@
 /* Media query to adjust text and image sizes on smaller screens to ensure readability */
 
-        /* 1025 pixels to 1140 pixels */
+/* 1025 pixels to 1140 pixels */
 @media only screen and (max-width: 1140px) {
-    /* Adjusting font sizes for headers and paragraphs on smaller screens */
-    body p, .nav_bar, .media_bar, main li>p.return {
-        font-size: clamp(0.5rem, 1.7vw, 2.5rem);
-    }
-    p#citation {
-        font-size: clamp(0.5rem, 0.8vw, 2.5rem);
-    }
+  /* Adjusting font sizes for headers and paragraphs on smaller screens */
+  body p,
+  .nav_bar,
+  .media_bar,
+  main li > p.return {
+    font-size: clamp(0.5rem, 1.7vw, 2.5rem);
+  }
+  p#citation {
+    font-size: clamp(0.5rem, 0.8vw, 2.5rem);
+  }
 
-    h1 {
-        font-size: clamp(0.5rem, 2.3vw, 2.5rem);
-    }
-    h2 {
-        font-size: clamp(0.5rem, 2.3vw, 2.5rem);
-    }
-    h3 {
-        font-size: clamp(0.5rem, 2vw, 2.5rem);
-        clear: both;
-    }
+  h1 {
+    font-size: clamp(0.5rem, 2.3vw, 2.5rem);
+  }
+  h2 {
+    font-size: clamp(0.5rem, 2.3vw, 2.5rem);
+  }
+  h3 {
+    font-size: clamp(0.5rem, 2vw, 2.5rem);
+    clear: both;
+  }
 
-    /* Section for adjusting image sizes for better fit on smaller screens */
-    main li>img {
-        margin: 0.5em 0.5em 0.5em 0;
-        padding: 0.5em 1em 0.5em 0;
-        float: left;
-        width: 15%;
-    }
-    main ul#book_list li>img, main ul#movie_list li>img, main ul#tv_list li>img, main ul#games_list li>img, main ul#audio_list li>img {
-        margin: 0.5em 0.5em 0.5em 0;
-        padding: 0.5em 1em 0.5em 0;
-        float: left;
-        width: 26%;
-    }
+  /* Section for adjusting image sizes for better fit on smaller screens */
+  main li > img {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
+    float: left;
+    width: 15%;
+  }
+  main ul#book_list li > img,
+  main ul#movie_list li > img,
+  main ul#tv_list li > img,
+  main ul#games_list li > img,
+  main ul#audio_list li > img {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
+    float: left;
+    width: 26%;
+  }
 
-    /* Section to manage font sizes for p and div elements */
-    main ul#book_list p, main ul#movie_list p, main ul#tv_list p, main ul#games_list p, main ul#audio_list p {
-        font-size: clamp(0.5rem, 1.7vw, 2.5rem);
-        padding: 0.2em;
-        margin: 0.2em;
-    }
-    main ul#book_list div, main ul#movie_list div, main ul#tv_show_list div, main ul#video_game_list div, main ul#audiobook_list div {
-        font-size: clamp(0.5rem, 0.9vw, 2.5rem);
-    }
+  /* Section to manage font sizes for p and div elements */
+  main ul#book_list p,
+  main ul#movie_list p,
+  main ul#tv_list p,
+  main ul#games_list p,
+  main ul#audio_list p {
+    font-size: clamp(0.5rem, 1.7vw, 2.5rem);
+    padding: 0.2em;
+    margin: 0.2em;
+  }
+  main ul#book_list div,
+  main ul#movie_list div,
+  main ul#tv_show_list div,
+  main ul#video_game_list div,
+  main ul#audiobook_list div {
+    font-size: clamp(0.5rem, 0.9vw, 2.5rem);
+  }
 
-    li::marker {
+  li::marker {
     font-size: clamp(0.1rem, 2vw, 2.5rem);
     margin-right: 0em;
-    }
+  }
 
-    footer {
-        font-size: clamp(0.5rem, 0.8vw, 2.5rem);
-    }
+  footer {
+    font-size: clamp(0.5rem, 0.8vw, 2.5rem);
+  }
 }
 
-        /* 870 pixels to 1024 pixels */
+/* 870 pixels to 1024 pixels */
 @media only screen and (max-width: 1024px) {
-    /* Adjustment to grid layout for smaller screens */
-    main ul#book_list,
-    main ul#movie_list,
-    main ul#tv_list,
-    main ul#games_list,
-    main ul#audio_list {
-        grid-template-columns: 1fr;
-        grid-template-rows: none;
-    }
+  /* Adjustment to grid layout for smaller screens */
+  main ul#book_list,
+  main ul#movie_list,
+  main ul#tv_list,
+  main ul#games_list,
+  main ul#audio_list {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
 
-    main ul#book_list li>img, main ul#movie_list li>img, main ul#tv_list li>img, main ul#games_list li>img, main ul#audio_list li>img {
-        margin: 0.5em 0.5em 0.5em 0;
-        padding: 0.5em 1em 0.5em 0;
-        float: left;
-        width: 16%;
-    }
+  main ul#book_list li > img,
+  main ul#movie_list li > img,
+  main ul#tv_list li > img,
+  main ul#games_list li > img,
+  main ul#audio_list li > img {
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1em 0.5em 0;
+    float: left;
+    width: 16%;
+  }
 }
 
-        /* 566 pixels to 869 pixels */
+/* 566 pixels to 869 pixels */
 @media only screen and (max-width: 869px) {
-    /* Adjusting font sizes for headers and paragraphs on smaller screens */
-    h2#works1 {
-        font-size: clamp(0.7rem, 2vw, 2.5rem);
-    }
-    h2#works2 {
-        font-size: clamp(0.7rem, 2vw, 2.5rem);
-    }
+  /* Adjusting font sizes for headers and paragraphs on smaller screens */
+  h2#works1 {
+    font-size: clamp(0.7rem, 2vw, 2.5rem);
+  }
+  h2#works2 {
+    font-size: clamp(0.7rem, 2vw, 2.5rem);
+  }
 
-    main li>img { min-width: 16%; }
-    
-    main ul#book_list h3, main ul#movie_list h3, main ul#tv_list h3, main ul#games_list h3, main ul#audio_list h3 {
-        font-size: clamp(0.8rem, 1.6vw, 3rem);
-        padding: 0.2em;
-        margin: 0.2em;
-    }
-    
-    footer div {
-        font-size: clamp(0.1rem, 1.5vw, 1.5rem);
-    }
+  main li > img {
+    min-width: 16%;
+  }
+
+  main ul#book_list h3,
+  main ul#movie_list h3,
+  main ul#tv_list h3,
+  main ul#games_list h3,
+  main ul#audio_list h3 {
+    font-size: clamp(0.8rem, 1.6vw, 3rem);
+    padding: 0.2em;
+    margin: 0.2em;
+  }
+
+  footer div {
+    font-size: clamp(0.1rem, 1.5vw, 1.5rem);
+  }
 }
 
-        /* 501 pixels to 565 pixels */
+/* 501 pixels to 565 pixels */
 @media only screen and (max-width: 565px) {
-    h1 {
-        font-size: clamp(1rem, 2.5vw, 2rem);
-    }
-    h2 {
-        font-size: clamp(1rem, 2.5vw, 2rem);
-    }
-    h3 {
-        font-size: clamp(1rem, 2.1vw, 2rem);
-        clear: both;
-    }
+  h1 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+  }
+  h2 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+  }
+  h3 {
+    font-size: clamp(1rem, 2.1vw, 2rem);
+    clear: both;
+  }
 
-    main li>img, main ul#book_list li>img, main ul#movie_list li>img, main ul#tv_list li>img, main ul#games_list li>img, main ul#audio_list li>img {
-        min-width: 55px;
-        margin: 0.5em 0.5em 0.5em;
-    }
-    
-    #interacted_works, #to_be_explored {
-        padding: 0.5em;
-    }
+  main li > img,
+  main ul#book_list li > img,
+  main ul#movie_list li > img,
+  main ul#tv_list li > img,
+  main ul#games_list li > img,
+  main ul#audio_list li > img {
+    min-width: 55px;
+    margin: 0.5em 0.5em 0.5em;
+  }
+
+  #interacted_works,
+  #to_be_explored {
+    padding: 0.5em;
+  }
 }
