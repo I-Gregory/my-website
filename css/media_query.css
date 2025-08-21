@@ -6,12 +6,20 @@
   body p,
   .nav_bar,
   .media_bar,
-  main li > p.return {
+  main li > p.return,
+  .return {
     font-size: clamp(0.5rem, 1.7vw, 2.5rem);
   }
   p#citation {
     font-size: clamp(0.5rem, 0.8vw, 2.5rem);
   }
+  main ul#explored_works li,
+  main ul#unexplored_works li {
+    font-size: clamp(0.5rem, 1vw, 2.5rem);
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0em 0.5em 0.5em 1em;
+  }
+
 
   h1 {
     font-size: clamp(0.5rem, 2.3vw, 2.5rem);
@@ -35,9 +43,16 @@
   main ul#movie_list li > img,
   main ul#tv_list li > img,
   main ul#games_list li > img,
-  main ul#audio_list li > img {
+  main ul#audio_list li > img{
     margin: 0.5em 0.5em 0.5em 0;
     padding: 0.5em 1em 0.5em 0;
+    float: left;
+    width: 26%;
+  }
+  main ul#explored_works li > img,
+  main ul#unexplored_works li > img {
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0 0.5em 0.5em 1em;
     float: left;
     width: 26%;
   }
@@ -81,7 +96,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: none;
   }
-
   main ul#book_list li > img,
   main ul#movie_list li > img,
   main ul#tv_list li > img,
@@ -91,6 +105,35 @@
     padding: 0.5em 1em 0.5em 0;
     float: left;
     width: 16%;
+  }
+
+  body main section#interacted_works > p,
+  body main section#to_be_explored > p {
+    font-size: clamp(0.5rem, 1vw, 2.5rem);
+  }
+  body main section#interacted_works > h2,
+  body main section#to_be_explored > h2 {
+    font-size: clamp(0.5rem, 1.8vw, 2.5rem);
+  }
+
+  main ul#explored_works,
+  main ul#unexplored_works {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  main ul#explored_works li,
+  main ul#unexplored_works li {
+    font-size: clamp(0.5rem, 0.7vw, 2.5rem);
+  }
+  main ul#explored_works li > img,
+  main ul#unexplored_works li > img {
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0em 0.5em 0.5em 1em;
+    float: left;
+    width: 25%;
+  }
+  .return {
+    font-size: clamp(0.5rem, 0.5vw, 2.5rem);
   }
 }
 
@@ -136,6 +179,14 @@
     clear: both;
   }
 
+  main ul#explored_works li,
+  main ul#unexplored_works li {
+    font-size: clamp(0.35rem, 0.4vw, 2.5rem);
+  }
+  .return {
+    font-size: clamp(0.35rem, 0.3vw, 2.5rem);
+  }
+
   main li > img,
   main ul#book_list li > img,
   main ul#movie_list li > img,
@@ -144,6 +195,10 @@
   main ul#audio_list li > img {
     min-width: 55px;
     margin: 0.5em 0.5em 0.5em;
+  }
+  main ul#explored_works li > img,
+  main ul#unexplored_works li > img {
+    min-width: 36px;
   }
 
   #interacted_works,

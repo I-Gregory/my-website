@@ -113,9 +113,6 @@ main ul#audio_list li > img {
 main li > p {
   padding: 0.5em 1em 0.5em;
 }
-main li > p.return {
-  font-size: 1em;
-}
 main ul li > div {
   font-family: "Nova Square", "Quantico", "Audiowide", sans-serif;
 }
@@ -142,6 +139,17 @@ li.fantasy > h3 {
   font-family: "Quintessential", sans-serif;
 }
 
+/* h3 styles for each media type to apply relative font sizing for header3 elements */
+h3.li_books,
+h3.li_movies,
+h3.li_tvshows,
+h3.li_videogames,
+h3.li_audiobooks {
+  margin: 0.5em 0.5em 0.5em 0;
+  padding: 0.5em 1em 0.5em 0;
+  font-size: 1.8em;
+  clear: both;
+}
 h3 {
   margin: 0.5em 0.5em 0.5em 0;
   padding: 0.5em 1em 0.5em 0;
@@ -155,13 +163,24 @@ footer {
   clear: both;
 }
 
-/* Beginning of id styles - alphabatized */
+/* Beginning of id styles - ~alphabatized */
 #book_list,
 #movie_list,
 #tv_list,
 #games_list,
 #audio_list {
   /* ul element styles for each media type and their respective webpages */
+  list-style-type: none;
+  padding: 0.5em;
+  text-align: center;
+}
+
+main ul#explored_works {
+  list-style-type: none;
+  padding: 0.5em;
+  text-align: center;
+}
+main ul#unexplored_works {
   list-style-type: none;
   padding: 0.5em;
   text-align: center;
@@ -210,21 +229,29 @@ Class styles for each ul list item type */
 .top3 {
   list-style-type: "\1F44D";
 }
+.top3 li::marker {
+    font-size: 1.6em;
+}
 
 .li_books {
   font-family: "Lora", "Open Sans", sans-serif;
+  font-size: 1.08em; /* Adjusted to match Nova Square */
 }
 .li_movies {
   font-family: "Ultra", Impact, sans-serif;
+  font-size: 0.99em; /* Adjusted to match Nova Square */
 }
 .li_tvshows {
   font-family: "Faculty Glyphic Regular", Helvetica, sans-serif;
+  font-size: 1.02em; /* Adjusted to match Nova Square */
 }
 .li_videogames {
   font-family: "Orbitron", "Press Start 2P", sans-serif;
+  font-size: 1.1em; /* Adjusted to match Nova Square */
 }
 .li_audiobooks {
   font-family: Garamond, Times, sans-serif;
+  font-size: 1.2em; /* Adjusted to match Nova Square */
 }
 
 /* Media navigation bar styles */

@@ -1,4 +1,18 @@
-/* Styles for both sections of the works page */
+/* Styles for both sections of the works_list page */
+
+/* Styles specific to the interacted_works section */
+main ul#explored_works {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-gap: 0 2em;
+  font-size: 0.8em;
+}
+main ul#explored_works li > img {
+  margin: 0 0.5em 0.5em 0.5em;
+  padding: 0em 0.5em 0.5em 1em;
+  float: left;
+}
 #interacted_works {
   width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
   float: left;
@@ -7,12 +21,44 @@
   border: 4px solid rgb(100, 105, 104);
 }
 
+/* Styles specific to the to_be_explored section */
+main ul#unexplored_works {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-gap: 0 2em;
+  font-size: 0.8em;
+}
+main ul#unexplored_works li > img {
+  margin: 0 0.5em 0.5em 0.5em;
+  padding: 0em 0.5em 0.5em 1em;
+  float: left;
+}
 #to_be_explored {
   width: 34.11158%; /*Original 450px -> (450 / 1319.2) * 100 */
   float: right;
   text-align: center;
   padding: 0.5em;
   border: 4px solid rgb(100, 105, 104);
+}
+
+/* Size adjustment for update p element in works_list */
+#update {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Return to top link styling */
+.return {
+  font-size: 0.6em;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Nova Square", "Quantico", "Audiowide", sans-serif;
+}
+.return a {
+  color: #0077cc;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Grid formatting for media type webpages */
