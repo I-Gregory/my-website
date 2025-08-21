@@ -50,7 +50,7 @@ main ul#unexplored_works li > img {
 
 /* Return to top link styling */
 .return {
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding: 0.5em;
   text-align: center;
   font-family: "Nova Square", "Quantico", "Audiowide", sans-serif;
